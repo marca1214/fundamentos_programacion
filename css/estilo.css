@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body {
     font-family: sans-serif;
     margin: 0;
@@ -8,6 +12,11 @@ body {
     align-items: center;
     min-height: 100vh;
 }
+a
+{
+    display: inline-block;
+    text-decoration: none;
+}
 
 header {
     display: flex;
@@ -16,6 +25,14 @@ header {
     padding: 1em 0;
     text-align: center;
     width: 100%;
+
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    
+    
 }
 header .container {
     display: flex;     
@@ -40,6 +57,8 @@ header .container nav a
     text-decoration: none;
     margin: 0 15px;
     font-family: serif;
+
+
 }
 header .container h1
 {
@@ -64,6 +83,11 @@ main {
 }
 .container {
     width: 100%;
+
+    margin: 0 auto 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
 
 }
 
@@ -240,15 +264,12 @@ footer {
      header .container h1 {
         font-size: 1.2em;
     }
-    header .container .hamb
+   body
     {
-        display: block;
-        font-size: 40px;
-        color: red;
-     
-
+        font-size: 15px;
     }
-        header .container nav 
+
+    header .container nav 
     {
         position: fixed;
         width: 100%;
@@ -265,6 +286,7 @@ footer {
         transition: all 0.4s ease;
         transform: translateX(100%);
     }
+
     header .container nav.open 
     {
         transform: translateX(0);
@@ -276,6 +298,82 @@ footer {
         margin: 15px 0;
     }
 
+    header .container .hamb
+    {
+        display: block;
+        font-size: 40px;
+        color: red;
+
+    }
+
+    form .boton.boton-negro
+    {
+        width: 100%;
+    }
+
+    footer
+    {
+        text-align: center;
+    }
+
+    footer .logo-footer {
+        width: 50%;
+    }
+
+    footer .redes {
+        justify-content: center;
+    }
+
+    .container
+    {
+        width: 100%;
+    }
+
+    .columna-mobile-100
+    {
+        width: 100%;
+    }
+
+    .columna-mobile-50
+    {
+        width: 50%;
+    }
+
+    .empujar-mobile-0
+    {
+        margin-left: 0;
+    }
+
+    .sinpadding-mobile
+    {
+        padding: 0;
+    }
+
+    #inicio
+    {
+        height: 100vh;
+    }
+
+    #inicio img
+    {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    #servicios .bloque-servicio {
+        margin-bottom: 15px;
+    }
+
+    #contactenos {
+        padding: 0  
+    }
+
+    #contactenos iframe 
+    {
+        position: relative;
+        height: 50vh;
+    }
 
     .contenedor-botones {
         flex-direction: column; /* Apila los botones verticalmente */
@@ -292,10 +390,9 @@ footer {
         margin-right: 0.3em;
     }
 
-    footer {
-        font-size: 0.8em;
-        padding: 0.5em;
-    }
+   
+
+
 }
 
 
