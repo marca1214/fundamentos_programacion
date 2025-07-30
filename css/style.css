@@ -374,7 +374,7 @@ footer .redes a
 	header .container nav a
 	{
 		font-size: 30px;
-		margin: 15px 0;
+		margin: 0px 0;
 	}
 
 	header .container .hamb
@@ -384,8 +384,22 @@ footer .redes a
 		color: red;
 
 	}
+	header .container h1
+	{
+	    color: #fff9c4;
+	    font-family: verdana;
+	    font-size: 12px;
+	    letter-spacing: 8px;
+	    text-shadow: -3px -3px 1px #FF0000 , 2px 2px 1px #000
+	}
+	header .container .logo
+	{
+		width: 20%;
+	}
+
 
 	
+
 
 	footer
 	{
@@ -427,7 +441,7 @@ footer .redes a
 
 	#inicio
 	{
-		height: 100vh;
+		height: 40vh;
 	}
 
 	#inicio img
@@ -435,6 +449,17 @@ footer .redes a
 		height: 100%;
 		object-fit: cover;
 		object-position: center;
+	}
+		#inicio .bloque-inicio h1
+	{
+		color: white;
+		font-size: 100%;
+	}
+
+	#inicio .bloque-inicio p
+	{
+		color: white;
+		font-size: 100%;
 	}
 
 	#servicios .bloque-servicio {
